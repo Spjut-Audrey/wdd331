@@ -39,7 +39,7 @@ h2 {
   border-radius: 0.25em;
   font-size: 1.4rem;
   font-family: "Poppins", sans-serif;
-  color: #e5e6e6;
+  color: #ffffff;
   padding: 0em 2.8em;
   cursor: pointer;
   background: #25c286;
@@ -56,7 +56,7 @@ abbr {
 }
 
 body {
-    font: 75% georgia, sans-serif;
+    font: 75% 'Poppins', sans-serif;
     line-height: 1.88889;
     color: #555753;
     margin: 0;
@@ -74,16 +74,13 @@ h3 {
     font: bold 1.4em "Poppins", sans-serif;
     letter-spacing: 1px;
     margin-bottom: 0;
-    color: #7D775C;
     font-size: 2em;
     color: #3955f5;;
     }
 a:link {
-    font-weight: bold;
     text-decoration: none;
     }
 a:visited {
-    font-weight: bold;
     text-decoration: none;
     color: #D4CDDC;
     }
@@ -100,7 +97,6 @@ abbr {
 .page-wrapper {
     padding: 0;
     margin: 0;
-    display: grid;
     }
 
 .intro {
@@ -152,21 +148,28 @@ header {
 }
 .supporting {
     color: #3955f5;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-top:80px;
     display: grid;
     grid-gap: 80px;
     order: 3;
 }
 .explanation {
-
+    margin-left: 20%;
+    margin-right: 20%;
 }
-.benefits {
 
+.participation {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.benefits {
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .requirements {
-
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 footer {
@@ -174,6 +177,9 @@ footer {
     color: #ffffff;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    height: 150px;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 aside {
