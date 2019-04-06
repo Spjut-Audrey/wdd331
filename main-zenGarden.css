@@ -4,16 +4,16 @@
 html {
     margin: 0;
     padding: 0;
-}
+    }
 
 p, a{
-    font-family: 'Poppins', sans-serif;
+   font-family: 'Poppins', sans-serif;
 }
 
 
 
 h1 {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;  
     font-size: 2em;
     display: flex;
     justify-content: center;
@@ -22,29 +22,28 @@ h1 {
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6em;
-    display: flex;
+     display: flex;
     justify-content: center;
 }
 
 .summary {
-    padding: 5% 20%;
+     padding: 5% 20%;
     display: grid;
     font-size: .8em;
 }
 
 .summary a {
     display: grid;
-<<<<<<< HEAD
-    border: none;
-    box-shadow: none;
-    border-radius: 0.25em;
-    font-size: 1.4rem;
-    font-family: "Poppins", sans-serif;
-    color: #e5e6e6;
-    padding: 0em 2.8em;
-    cursor: pointer;
-    background: #25c286;
-    text-decoration: none;
+   border: none;
+  box-shadow: none;
+  border-radius: 0.25em;
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  color: #e5e6e6;
+  padding: 0em 2.8em;
+  cursor: pointer;
+  background: #25c286;
+  text-decoration: none;
     text-align: center;
     margin: auto;
     text-transform: uppercase;
@@ -57,20 +56,16 @@ abbr {
 }
 
 body {
-    font: 75% 'Poppins', sans-serif;
+    font: 75% georgia, sans-serif;
     line-height: 1.88889;
     color: #555753;
     margin: 0;
     padding: 0;
-    background: url(images/background.svg);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    }
 p {
     margin-top: 0;
     text-align: justify;
-}
+    }
 h3 {
     font: bold 1.4em "Poppins", sans-serif;
     letter-spacing: 1px;
@@ -78,36 +73,35 @@ h3 {
     color: #7D775C;
     font-size: 2em;
     color: #3955f5;;
-}
+    }
 a:link {
     font-weight: bold;
     text-decoration: none;
-}
-
+    }
 a:visited {
     font-weight: bold;
     text-decoration: none;
     color: #D4CDDC;
-}
+    }
 a:hover, a:focus, a:active {
     text-decoration: underline;
     color: #9685BA;
-}
+    }
 abbr {
     border-bottom: none;
-}
+    }
 
 
 /* specific divs */
 .page-wrapper {
     padding: 0;
     margin: 0;
-}
+    }
 
 .intro {
     margin-left: 20%;
     margin-right: 20%;
-}
+    }
 
 header h1 {
     color: #3955f5;
@@ -117,8 +111,8 @@ header h1 {
     height: 87px;
     white-space: nowrap;
     font-size: 2.4em;
-}
-
+    
+    }
 
 header h2 {
     color: #3955f5;
@@ -127,65 +121,48 @@ header h2 {
     margin-left: 20%;
     font-size: 2em;
     white-space: nowrap;
-}
-
+    }
 
 header {
     padding-top: 20px;
     height: 87px;
+    
 }
 
 .summary p {
     color: #3955f5;
     font:  1.1em;
-<<<<<<< HEAD
     text-align: center;
     padding-top: 125px;
     margin: auto;
     text-align: center;
     font-size: 1.5em;
     padding-right: 25%;
-}
+    }
 
 .preamble {
     padding: 0px 10px 0 10px;
     color: #3955f5;
-}
-
+    }
 .supporting {
-    color: #3955f5;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top:80px;
     display: grid;
-    grid-gap: 80px;
-}
-.explanation {
+    grid-template-columns: 50% 50%;
 
+    grid-column-gap: 40px;
+    grid-row-gap: 100px;
+    }
+.explanation {
+    grid-column: 2 / 3;
 }
 .benefits {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
 }
 .requirements {
-}
-footer {
-    background-color: #3955f5;
-    color: #ffffff;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-}
-.zen-valitade-html::before {
-
-}
-
-/* remove "Select a Design:" */
-.select {
-    visibility: hidden;
-}
-
-.design-selection {
-    position: relative;
-    left: 23%;
-    margin: 0;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
 }
 
 /* remove "Select a Design:" */
@@ -217,20 +194,26 @@ footer {
     height: 5rem;
 }
 
-.designer-name a{
+.designer-name {
     color: #6078f6;
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-top: -20px;
 }
 
-.design-selection .design-name {
+.design-name {
+    padding-top: 20px;
     text-decoration: none;
+    display: block;
     list-style: none;
     color: white;
     visibility: visible;
 }
 
 .design-archives {
-    margin-bottom: 0;
-    padding-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .design-archives li {
@@ -245,7 +228,7 @@ footer {
 
 /* hide "archives" */
 .archives {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*hide "resources"*/
@@ -281,64 +264,67 @@ footer {
 /* large css */
 
 @media only screen and (min-width: 64em) {
+  
     .zen-resources ul {
-        width: 70%;
-        margin: auto;
+    width: 70%;
+    margin: auto;
     }
 
     .zen-resources li {
         display: inline;
     }
-
+    
     .design-selection {
       position: relative;
       left: 5%;
       margin: 0;
    }
-
+    
     .design-selection ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto;
     }
-
+    
     .design-selection li {
         padding: 10px 10px 10px 10px;
         margin: 10px 10px 10px 10px;
     }
-
+    
     design-archives li {
         margin: 0 auto;
     }
-
+    
     h1 {
-        font-size: 3em;
-        padding-right: 65%;
-    }
+       font-size: 3em;
+       padding-right: 65%;
+   }
 
-    header h2 {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: 0;
-        font: bold 4em "Poppins", sans-serif;
-    }
+  header h2 {
+       margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0;
+      font: bold 4em "Poppins", sans-serif;
+   }
 
-    .summary {
-        font-size: 1.3em;
-        padding: 2% 15%;
-    }
+   .summary {
+       font-size: 1.3em;
+       padding: 2% 15%;
+   }
 
-    .summary p a {
-        max-width: 15%;
-        display: grid;
-        width: 450px;
-    }
-
+   .summary p a {
+    max-width: 15%;
+       display: grid;
+       width: 450px;
+   }
+    
     .summary p {
-        color: #3955f5;
-        font:  1.1em;
-        text-align: center;
-        padding-top: 125px;
-        margin: auto;
-        padding-right: 0%;
+    color: #3955f5;
+    font:  1.1em;
+    text-align: center;
+    padding-top: 125px;
+    margin: auto;
+    padding-right: 0%;
     }
+    
+}
