@@ -37,7 +37,7 @@ h2 {
     border: none;
     box-shadow: none;
     border-radius: 0.25em;
-    font-size: 1.4rem;
+    font-size: 1 rem;
     font-family: "Poppins", sans-serif;
     color: #ffffff;
     padding: 0em 2.8em;
@@ -86,7 +86,6 @@ a:visited {
     }
 a:hover, a:focus, a:active {
     text-decoration: underline;
-    color: #9685BA;
     }
 abbr {
     border-bottom: none;
@@ -152,25 +151,23 @@ header {
     margin-top:80px;
     display: grid;
     grid-gap: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
     /* order: 3; */
 }
 .explanation {
-    margin-left: 20%;
-    margin-right: 20%;
+
 }
 
 .participation {
-    margin-left: 20%;
-    margin-right: 20%;
+
 }
 
 .benefits {
-    margin-left: 20%;
-    margin-right: 20%;
+
 }
 .requirements {
-    margin-left: 20%;
-    margin-right: 20%;
+
 }
 
 footer {
@@ -178,9 +175,11 @@ footer {
     text-decoration: underline;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    height: 150px;
-    margin-left: 0%;
-    margin-right: 0%;
+    text-align: center;
+}
+
+footer a {
+    color: #3955f5;
 }
 
 /**aside {
