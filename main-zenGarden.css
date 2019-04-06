@@ -6,7 +6,7 @@ html {
     padding: 0;
     }
 
-p{
+p, a{
    font-family: 'Poppins', sans-serif;
 }
 
@@ -165,24 +165,66 @@ header {
     grid-row: 4 / 5;
 }
 
+/* remove "Select a Design:" */
+.select {
+  visibility: hidden;
+}
+
+.design-selection {
+    position: relative;
+    left: 23%;
+    margin: 0;
+}
+
 .design-selection ul {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0;
 }
 
 .design-selection li {
+    background-color: #3955f5;
+    text-align: center;
+    color: #3955f5;
     display: inline-block;
-    text-decoration: none;
-    list-style: none;
-    border: solid .5px #818080;
-    border-radius: 3px;
-    margin-bottom: 5px;
+    border: solid .5px #3955f5;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    width: 50%;
+    height: 5rem;
 }
 
-.design-selection a {
+.designer-name a{
+    color: #6078f6;
+}
+
+.design-selection .design-name {
     text-decoration: none;
+    list-style: none;
+    color: white;
+    visibility: visible;
+}
+
+.design-archives {
+  position: relative;
+  bottom: -20px;
+  background-color: #3955f5;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.design-archives li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.design-archives a {
+    color: white;
+}
+
+/* hide "archives" */
+.archives {
+  visibility: hidden;
 }
 
 /*hide "resources"*/
@@ -192,7 +234,7 @@ header {
 }
 
 .zen-resources {
-    background-color: #4d4e4d;
+    background-color: white;
     margin: 0 auto;
 }
 
@@ -202,8 +244,8 @@ header {
 }
 
 .zen-resources a {
-    text-decoration: none;
-    color: white;
+    text-decoration: underline;
+    color: #3955f5;
     text-align: center;
 }
 
@@ -212,6 +254,13 @@ header {
 /* large css */
 
 @media only screen and (min-width: 64em) {
+    
+    .design-selection {
+      position: relative;
+      left: 5%;
+      margin: 0;
+   }
+    
     .design-selection ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -221,6 +270,10 @@ header {
     .design-selection li {
         padding: 10px 10px 10px 10px;
         margin: 10px 10px 10px 10px;
+    }
+    
+    design-archives li {
+        margin: 0 auto;
     }
     
     h1 {
