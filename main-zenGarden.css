@@ -34,6 +34,7 @@ h2 {
 
 .summary a {
     display: grid;
+<<<<<<< HEAD
     border: none;
     box-shadow: none;
     border-radius: 0.25em;
@@ -56,7 +57,7 @@ abbr {
 }
 
 body {
-    font: 75% georgia, sans-serif;
+    font: 75% 'Poppins', sans-serif;
     line-height: 1.88889;
     color: #555753;
     margin: 0;
@@ -82,6 +83,7 @@ a:link {
     font-weight: bold;
     text-decoration: none;
 }
+
 a:visited {
     font-weight: bold;
     text-decoration: none;
@@ -115,8 +117,8 @@ header h1 {
     height: 87px;
     white-space: nowrap;
     font-size: 2.4em;
-
 }
+
 
 header h2 {
     color: #3955f5;
@@ -127,15 +129,16 @@ header h2 {
     white-space: nowrap;
 }
 
+
 header {
     padding-top: 20px;
     height: 87px;
-
 }
 
 .summary p {
     color: #3955f5;
     font:  1.1em;
+<<<<<<< HEAD
     text-align: center;
     padding-top: 125px;
     margin: auto;
@@ -148,6 +151,7 @@ header {
     padding: 0px 10px 0 10px;
     color: #3955f5;
 }
+
 .supporting {
     color: #3955f5;
     margin-left: 20%;
@@ -176,6 +180,17 @@ footer {
 /* remove "Select a Design:" */
 .select {
     visibility: hidden;
+}
+
+.design-selection {
+    position: relative;
+    left: 23%;
+    margin: 0;
+}
+
+/* remove "Select a Design:" */
+.select {
+  visibility: hidden;
 }
 
 .design-selection {
@@ -266,7 +281,6 @@ footer {
 /* large css */
 
 @media only screen and (min-width: 64em) {
-
     .zen-resources ul {
         width: 70%;
         margin: auto;
@@ -277,10 +291,10 @@ footer {
     }
 
     .design-selection {
-        position: relative;
-        left: 5%;
-        margin: 0;
-    }
+      position: relative;
+      left: 5%;
+      margin: 0;
+   }
 
     .design-selection ul {
         display: grid;
@@ -328,5 +342,3 @@ footer {
         margin: auto;
         padding-right: 0%;
     }
-
-}
