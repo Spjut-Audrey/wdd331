@@ -193,17 +193,19 @@ footer a {
 /* remove "Select a Design:" */
 .select {
     visibility: hidden;
+    width: 0px;
 }
 
 .design-selection {
-    // position: relative;
-    // left: 23%;
     margin: 0;
-    margin-right: -10;
-    padding-right: -10;
+    display: flex;
+    justify-content: center;
 }
 
 .design-selection ul {
+    padding-top: 20px;
+    position: relative;
+    left: -10px;
     display: grid;
     grid-template-columns: 1fr;
     margin: 0;
@@ -217,8 +219,12 @@ footer a {
     border: solid .5px #3955f5;
     border-radius: 15px;
     margin-bottom: 15px;
-    width: 50%;
+    width: 100%;
     height: 5rem;
+}
+
+.designer-name, .design-name {
+    padding: 0px 5px 0px 5px;
 }
 
 .designer-name {
@@ -241,12 +247,17 @@ footer a {
 .design-archives {
     margin-bottom: 0;
     padding-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .design-archives li {
+    display: flex;
+    justify-content: center;
     color: #3955f5;
     list-style: none;
     text-decoration: underline;
+    max-width: 100px;
 }
 
 .design-archives a {
@@ -256,6 +267,8 @@ footer a {
 /* hide "archives" */
 .archives {
   visibility: hidden;
+  width: 0px;
+  height: 0px;
 }
 
 /*hide "resources"*/
@@ -272,6 +285,8 @@ footer a {
 }
 
 .zen-resources ul {
+    position: relative;
+    left: -35px;
     width: 100%;
     list-style: none;
     margin: auto;
@@ -297,7 +312,9 @@ footer a {
 @media only screen and (min-width: 64em) {
 
     .zen-resources ul {
-      width: 70%;
+      display: flex;
+      justify-content: center;
+/*      width: 100%;*/
       margin: auto;
     }
 
@@ -307,18 +324,20 @@ footer a {
 
     .design-selection {
       position: relative;
-      left: 5%;
+      left: -2%;
       margin: 0;
-      max-width: 950px
    }
 
     .design-selection ul {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto;
     }
 
     .design-selection li {
+        width: 100%;
+        max-width: 150px;
         padding: 10px 10px 10px 10px;
         margin: 10px 0px 10px 10px;
     }
