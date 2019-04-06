@@ -196,11 +196,11 @@ footer a {
 }
 
 .design-selection {
-    position: relative;
-    left: 23%;
+    // position: relative;
+    // left: 23%;
     margin: 0;
-    margin-right: 0;
-    padding-right: 0;
+    margin-right: -10;
+    padding-right: -10;
 }
 
 .design-selection ul {
@@ -239,8 +239,8 @@ footer a {
 }
 
 .design-archives {
-  margin-bottom: 0;
-  padding-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .design-archives li {
@@ -265,6 +265,8 @@ footer a {
 }
 
 .zen-resources {
+    display: flex;
+    justify-content: center;
     background-color: #3955f5;
     margin: 0 auto;
 }
@@ -274,6 +276,7 @@ footer a {
     list-style: none;
     margin: auto;
     padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .zen-resources li {
@@ -294,8 +297,8 @@ footer a {
 @media only screen and (min-width: 64em) {
 
     .zen-resources ul {
-    width: 70%;
-    margin: auto;
+      width: 70%;
+      margin: auto;
     }
 
     .zen-resources li {
@@ -306,6 +309,7 @@ footer a {
       position: relative;
       left: 5%;
       margin: 0;
+      max-width: 950px
    }
 
     .design-selection ul {
@@ -316,7 +320,7 @@ footer a {
 
     .design-selection li {
         padding: 10px 10px 10px 10px;
-        margin: 10px 10px 10px 10px;
+        margin: 10px 0px 10px 10px;
     }
 
     design-archives li {
