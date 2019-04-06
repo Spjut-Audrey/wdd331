@@ -34,16 +34,16 @@ h2 {
 
 .summary a {
     display: grid;
-   border: none;
-  box-shadow: none;
-  border-radius: 0.25em;
-  font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
-  color: #e5e6e6;
-  padding: 0em 2.8em;
-  cursor: pointer;
-  background: #25c286;
-  text-decoration: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0.25em;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    color: #e5e6e6;
+    padding: 0em 2.8em;
+    cursor: pointer;
+    background: #25c286;
+    text-decoration: none;
     text-align: center;
     margin: auto;
     text-transform: uppercase;
@@ -100,13 +100,13 @@ abbr {
 .page-wrapper {
     padding: 0;
     margin: 0;
-    display: grid;
+    /* display: grid;*/
     }
 
 .intro {
     margin-left: 20%;
     margin-right: 20%;
-    order: 1;
+    /* order: 1; */
     }
 
 header h1 {
@@ -157,7 +157,7 @@ header {
     margin-top:80px;
     display: grid;
     grid-gap: 80px;
-    order: 3;
+    /* order: 3; */
 }
 .explanation {
 
@@ -170,15 +170,15 @@ header {
 }
 
 footer {
-    background-color: #3955f5;
     color: #ffffff;
+    text-decoration: underline;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
-aside {
-    order: 2;
-}
+/**aside {
+ *    order: 3;
+ } */
 
 .zen-valitade-html::before {
 
@@ -193,6 +193,8 @@ aside {
     position: relative;
     left: 23%;
     margin: 0;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .design-selection ul {
@@ -257,7 +259,7 @@ aside {
 }
 
 .zen-resources {
-    background-color: white;
+    background-color: #3955f5;
     margin: 0 auto;
 }
 
@@ -265,6 +267,7 @@ aside {
     width: 100%;
     list-style: none;
     margin: auto;
+    padding-bottom: 40px;
 }
 
 .zen-resources li {
@@ -274,7 +277,7 @@ aside {
 
 .zen-resources a {
     text-decoration: underline;
-    color: #3955f5;
+    color: white;
     text-align: center;
 }
 
