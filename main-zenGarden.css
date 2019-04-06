@@ -22,28 +22,28 @@ h1 {
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6em;
-     display: flex;
+    display: flex;
     justify-content: center;
 }
 
 .summary {
-     padding: 5% 20%;
+    padding: 5% 20%;
     display: grid;
     font-size: .8em;
 }
 
 .summary a {
     display: grid;
-   border: none;
-  box-shadow: none;
-  border-radius: 0.25em;
-  font-size: 1.4rem;
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  padding: 0em 2.8em;
-  cursor: pointer;
-  background: #25c286;
-  text-decoration: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0.25em;
+    font-size: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    padding: 0em 2.8em;
+    cursor: pointer;
+    background: #25c286;
+    text-decoration: none;
     text-align: center;
     margin: auto;
     text-transform: uppercase;
@@ -97,12 +97,13 @@ abbr {
 .page-wrapper {
     padding: 0;
     margin: 0;
+    /* display: grid;*/
     }
 
 .intro {
     margin-left: 20%;
     margin-right: 20%;
-    order: 1;
+    /* order: 1; */
     }
 
 header h1 {
@@ -151,7 +152,7 @@ header {
     margin-top:80px;
     display: grid;
     grid-gap: 80px;
-    order: 3;
+    /* order: 3; */
 }
 .explanation {
     margin-left: 20%;
@@ -173,8 +174,8 @@ header {
 }
 
 footer {
-    background-color: #3955f5;
     color: #ffffff;
+    text-decoration: underline;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     height: 150px;
@@ -182,9 +183,9 @@ footer {
     margin-right: 0%;
 }
 
-aside {
-    order: 2;
-}
+/**aside {
+ *    order: 3;
+ } */
 
 .zen-valitade-html::before {
 
@@ -192,13 +193,15 @@ aside {
 
 /* remove "Select a Design:" */
 .select {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .design-selection {
     position: relative;
     left: 23%;
     margin: 0;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .design-selection ul {
@@ -263,7 +266,7 @@ aside {
 }
 
 .zen-resources {
-    background-color: white;
+    background-color: #3955f5;
     margin: 0 auto;
 }
 
@@ -271,6 +274,7 @@ aside {
     width: 100%;
     list-style: none;
     margin: auto;
+    padding-bottom: 40px;
 }
 
 .zen-resources li {
@@ -280,7 +284,7 @@ aside {
 
 .zen-resources a {
     text-decoration: underline;
-    color: #3955f5;
+    color: white;
     text-align: center;
 }
 
