@@ -1,93 +1,100 @@
 /* small/main css */
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+$main-blue: #3955f5;
+$secondary-blue: #6078f6;
+
+/** animation for design-selection buttons to change colors on hover **/
+@keyframes buttonBgColorChange {
+  from {background-color: $main-blue;}
+  to {background-color: $secondary-blue;}
+}
+
 html {
     margin: 0;
     padding: 0;
     }
 
-p{
+p, a{
    font-family: 'Poppins', sans-serif;
 }
 
-a {
-    font-family: 'Poppins', sans-serif;
-}
+
 
 h1 {
- font-family: 'Poppins', sans-serif;
-   font-size: 2em;
-   display: flex;
-   justify-content: center
+  font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
-   font-family: 'Poppins', sans-serif;
-   font-size: 1.6em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
     display: flex;
-   justify-content: center;
+    justify-content: center;
 }
 
 .summary {
     padding: 5% 20%;
-   display: grid;
-   font-size: .8em;
+    display: grid;
+    font-size: .8em;
 }
 
 .summary a {
-   display: grid;
-  border: none;
- box-shadow: none;
- border-radius: 0.25em;
- font-size: 1.4rem;
- font-family: "Poppins", sans-serif;
- color: #e5e6e6;
- padding: 0.6em 2.2em;
- cursor: pointer;
- background: #446851;
- text-decoration: none;
-   text-align: center;
-   margin: auto;
-   text-transform: uppercase;
+    display: grid;
+    border: none;
+    box-shadow: none;
+    border-radius: 0.25em;
+    font-size: 1 rem;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    padding: 0em 2.8em;
+    cursor: pointer;
+    background: #25c286;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
 }
 
-.summary p{
-   text-align: center;
-}
+
 
 abbr {
-   text-decoration: none;
+    text-decoration: none;
 }
+
 body {
-    font: 75% georgia, sans-serif;
+    font: 75% 'Poppins', sans-serif;
     line-height: 1.88889;
     color: #555753;
     margin: 0;
     padding: 0;
+    background: url(images/background.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 p {
     margin-top: 0;
     text-align: justify;
     }
 h3 {
-    font: italic normal 1.4em georgia, sans-serif;
+    font: bold 1.4em "Poppins", sans-serif;
     letter-spacing: 1px;
     margin-bottom: 0;
-    color: #7D775C;
+    font-size: 2em;
+    color: $main-blue;
     }
 a:link {
-    font-weight: bold;
     text-decoration: none;
-    color: #B7A5DF;
     }
 a:visited {
-    font-weight: bold;
     text-decoration: none;
     color: #D4CDDC;
     }
 a:hover, a:focus, a:active {
     text-decoration: underline;
-    color: #9685BA;
     }
 abbr {
     border-bottom: none;
@@ -98,140 +105,183 @@ abbr {
 .page-wrapper {
     padding: 0;
     margin: 0;
+    /* display: grid;*/
     }
 
 .intro {
     margin-left: 20%;
     margin-right: 20%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 20%;
-    grid-column-gap: 40px;
-    grid-row-gap: 80px;
+    /* order: 1; */
     }
 
 header h1 {
-    background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
+    color: $main-blue;
     margin-top: 10px;
     display: block;
     width: 219px;
     height: 87px;
-    text-indent: 100%;
     white-space: nowrap;
-    overflow: hidden;
+    font-size: 2.4em;
+
     }
 
 header h2 {
-    background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left;
+    color: $main-blue;
     margin-top: 58px;
     margin-bottom: 40px;
-    width: 200px;
-    height: 18px;
-    text-indent: 100%;
+    margin-left: 20%;
+    font-size: 2em;
     white-space: nowrap;
-    overflow: hidden;
     }
 
 header {
     padding-top: 20px;
     height: 87px;
-    display: none;
+
 }
 
-.summary {
-    margin: 20px 20px 20px 10px;
-    width: 100%;
-    display: none;
-    }
 .summary p {
-    font: italic 1.1em/2.2 georgia;
+    color: $main-blue;
+    font:  1.1em;
     text-align: center;
-    }
+    padding-top: 125px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    padding-right: 25%;
+}
 
 .preamble {
     padding: 0px 10px 0 10px;
-    }
+    color: $main-blue;
+}
 .supporting {
+    color: $main-blue;
+    margin-top:80px;
+    display: grid;
+    grid-gap: 80px;
     margin-left: 20%;
     margin-right: 20%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-
-    grid-column-gap: 40px;
-    grid-row-gap: 100px;
-    }
-.explanation {
-    grid-column: 2 / 3;
+    /* order: 3; */
 }
+.explanation {
+
+}
+
+.participation {
+
+}
+
 .benefits {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
+
 }
 .requirements {
-    grid-column: 1 / 3;
-    grid-row: 4 / 5;
+
 }
 
-//remove "Select a Design:"
+footer {
+    color: #ffffff;
+    text-decoration: underline;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+}
+
+footer a {
+    color: $main-blue;
+}
+
+/**aside {
+ *    order: 3;
+ } */
+
+.zen-valitade-html::before {
+
+}
+
+/* remove "Select a Design:" */
 .select {
-  visibility: hidden;
+    visibility: hidden;
+    width: 0px;
 }
 
 .design-selection {
-    position: relative;
-    left: 23%;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .design-selection ul {
+    padding-top: 20px;
+    position: relative;
+    left: -10px;
     display: grid;
     grid-template-columns: 1fr;
     margin: 0;
 }
 
 .design-selection li {
-    background-color: #3955f5;
+    background-color: $main-blue;
     text-align: center;
-    color: #3955f5;
+    color: $main-blue;
     display: inline-block;
-    border: solid .5px #3955f5;
+    border: solid .5px $main-blue;
     border-radius: 15px;
     margin-bottom: 15px;
-    width: 50%;
+    width: 100%;
     height: 5rem;
 }
 
-.designer-name a{
-    color: #6078f6;
+li:hover {
+    animation: buttonBgColorChange 3s;
 }
 
-.design-selection a {
+.designer-name, .design-name {
+    padding: 0px 5px 0px 5px;
+}
+
+.designer-name {
+    color: $secondary-blue;
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-top: -20px;
+}
+
+.design-name {
+    padding-top: 20px;
     text-decoration: none;
+    display: block;
     list-style: none;
     color: white;
     visibility: visible;
 }
 
 .design-archives {
-  position: relative;
-  bottom: -20px;
-  background-color: #3955f5;
-  margin-bottom: 0;
-  padding-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .design-archives li {
+    display: flex;
+    justify-content: center;
+    color: $main-blue;
     list-style: none;
-    text-decoration: none;
+    text-decoration: underline;
+    max-width: 100px;
 }
 
 .design-archives a {
-    color: white;
+    color: $main-blue;
 }
 
-//hide "archives"
+/* hide "archives" */
 .archives {
   visibility: hidden;
+  width: 0px;
+  height: 0px;
 }
 
 /*hide "resources"*/
@@ -241,64 +291,105 @@ header {
 }
 
 .zen-resources {
-    background-color: #3955f5;
+    display: flex;
+    justify-content: center;
+    background-color: $main-blue;
     margin: 0 auto;
 }
 
 .zen-resources ul {
+    position: relative;
+    left: -35px;
+    width: 100%;
     list-style: none;
-    margin: 0 auto;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.zen-resources li {
+    text-align: center;
+    padding-right: 75px;
 }
 
 .zen-resources a {
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
     text-align: center;
 }
 
+
+
+
 /* large css */
 
 @media only screen and (min-width: 64em) {
-  
-   .design-selection {
+
+    .zen-resources ul {
+      display: flex;
+      justify-content: center;
+/*      width: 100%;*/
+      margin: auto;
+    }
+
+    .zen-resources li {
+        display: inline;
+    }
+
+    .design-selection {
       position: relative;
-      left: 5%;
+      left: -2%;
       margin: 0;
    }
-  
+
     .design-selection ul {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto;
     }
-    
+
     .design-selection li {
+        width: 100%;
+        max-width: 150px;
         padding: 10px 10px 10px 10px;
-        margin: 10px 10px 10px 10px;
-      
+        margin: 10px 0px 10px 10px;
     }
-  
-    .design-archives li {
+
+    design-archives li {
         margin: 0 auto;
     }
-    
+
     h1 {
        font-size: 3em;
        padding-right: 65%;
    }
 
-   h2 {
-       font-size: 4em;
+  header h2 {
+       margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0;
+      font: bold 4em "Poppins", sans-serif;
    }
 
    .summary {
-       font-size: 1.5em;
+       font-size: 1.3em;
        padding: 2% 15%;
    }
 
    .summary p a {
     max-width: 15%;
        display: grid;
+       width: 450px;
    }
-    
+
+    .summary p {
+    color: $main-blue;
+    font:  1.1em;
+    text-align: center;
+    padding-top: 125px;
+    margin: auto;
+    padding-right: 0%;
+    }
+
 }

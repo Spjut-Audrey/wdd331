@@ -1,6 +1,12 @@
 /* small/main css */
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+/** animation for design-selection buttons to change colors on hover **/
+@keyframes buttonBgColorChange {
+  from {background-color: #3955f5;}
+  to {background-color: #6078f6;}
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -223,6 +229,10 @@ footer a {
     height: 5rem;
 }
 
+li:hover {
+    animation: buttonBgColorChange 3s;
+}
+
 .designer-name, .design-name {
     padding: 0px 5px 0px 5px;
 }
@@ -304,6 +314,7 @@ footer a {
     color: white;
     text-align: center;
 }
+
 
 
 
